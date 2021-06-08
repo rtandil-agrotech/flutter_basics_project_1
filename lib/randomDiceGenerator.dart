@@ -1,18 +1,8 @@
 import 'dart:math';
 
 class RandomDiceGenerator {
-  int lastNumber = 0;
-
   int call() {
-    int number;
-
-    do {
-      number = _randomDiceGenerator();
-    } while (number == lastNumber);
-
-    lastNumber = number;
-
-    return number;
+    return _randomDiceGenerator();
   }
 
   int _randomDiceGenerator() {
